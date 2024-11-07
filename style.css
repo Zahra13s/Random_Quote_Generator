@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Gotu&family=IM+Fell+Double+Pica:ital@0;1&family=MonteCarlo&display=swap');
+*{
+    color: white;
+    font-family: "Gotu", serif;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to bottom, #12192c, #151d32, #182138, #1b253f, #1e2945);
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.quote-container{
+    width: 75vw;
+    background-color: #00000075;
+    border-radius: 7px;
+}
+
+.quote-container .header{
+    font-family: "IM Fell Double Pica", serif;
+    font-style: italic;
+    font-size: 24px;
+    background-color: #2F2F2F25;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 15px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.quote-container .header h3{
+    margin: 0;
+}
+
+.quote-container .body{
+    padding: 15px;
+}
+
+#quote{
+    font-size: 24px;
+    font-family: "Croissant One", serif;
+}
+
+.quote-container .body div{
+    font-size: 34px;
+    font-family: "MonteCarlo", cursive;
+    text-align: end;
+    margin-right: 10px;
+}
+
+.select{
+    width: 75vw;
+    margin-top: 15px;
+    display: flex;
+}
+
+select{
+    flex: 2;
+    margin-right: 5px;
+}
+
+select,option,button{
+    color: #0D0D0D;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+select,
+option{
+    padding: 10px;
+}
+
+img{
+    margin-right: 3px;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    border: none;
+}
+

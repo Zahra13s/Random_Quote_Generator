@@ -4,21 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="quote.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Quotes API</title>
 </head>
 
 <body>
-<form action="">
-    <div class="category">
-        <h1>Get A Random Quote</h1>
-        <h5 id="category"></h3>
-        <p id="quote">"" </p><span id="author"></span>
-        <select name="" id="categories"></select>
-        <button id="generate"><img src="../sparkle.png" width="15px" alt="">Generate</button>
-    </div>
-</form>
+    <form action="">
+        <div class="category">
+            <h1>Get A Random Quote</h1>
+            <div class="quote-container">
+                <div class="header">
+                    <h3 id="category">Experience</h3>
+                    <i class="fa-solid fa-clipboard" onclick="copyToClipboard()"></i>
+                </div>
+                <div class="body" id="text">
+                    <p id="quote">"People are going to judge you anyway, so you might as well do what you want." </p>
+                    <div id="author">Taylor Swift</div>
+                </div>
+            </div>
+            <div class="select">
+                <select name="" id="categories"></select>
+            <button id="generate"><img src="../sparkle.png" width="15px" alt="">Generate</button>
+            </div>
+        </div>
+    </form>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="app.js"></script>
+
 </html>
